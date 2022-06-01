@@ -1,0 +1,2 @@
+# havalani_veritabani
+ 
