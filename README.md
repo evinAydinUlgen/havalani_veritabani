@@ -1,5 +1,5 @@
 # havalani_veritabani
- 1.PROJENİN TANIMI
+ ## 1.PROJENİN TANIMI
 Bugün tüm dünyada en konforlu ve hızlı bir şekilde seyahat etmenin yollarından biri ve en 
 önemlisi Havayolu seyahatidir.Günümüzde havayolu firmalarının bir kısmı iç hatlarda 
 ulaşımı sağlarken bir kısmı da hem iç hatlar hem dış hatlar arasında seyahat kolaylığı 
@@ -9,14 +9,14 @@ projemde yolcuların seyahat öncesi sonrası veya seyahat sırasındaki bilgile
 tabanına kaydedeceğim.Böylece uçuşdan önce veya sonra yaşanabilecek aksaklıkları 
 ortadan kaldırmış olacağım ve bu kayıtların bilgisi de uzun süre veritabanında 
 saklanacaktır.
-2.GEREKSİNİM ANALİZİ
+## 2.GEREKSİNİM ANALİZİ
 Projeme başlamadan önce havayollarının giriş çıkışlarına dair raporlarını araştırdım ve hem 
 havayolu şirketinin hem de yolcuların ne gibi bilgilere sahip olması gerektiğini 
 çözümledim.Bunları bir gereksinim listesinde sıraladım.Bu listede ana varlıklar ve 
 öznitelikleri belirledikten sonra varlıklar arasındaki iş kurallarını ve ilişkilerini belirledim.En 
 sonda primary key ve foreign key’lerimi de işaretleyip sırasıyla Chen Modeli, Kazayağı 
 Modeli ve İlişkisel Şemamı oluşturdum.
-3.İŞ KURALLARI
+## 3.İŞ KURALLARI
 -Bir yolcunun kestiği biletlerde ad,soyad,kimlik numarası,telefon no gibi kayıtlar 
 saklanacaktır.
 -Kesilen biletlerde yapılacak seyahate ilişkin uçuş ve uçak id’leri bellidir.Biletin rezerve 
