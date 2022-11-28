@@ -19,30 +19,42 @@ Modeli ve İlişkisel Şemamı oluşturdum.
 ## 3.İŞ KURALLARI
 -Bir yolcunun kestiği biletlerde ad,soyad,kimlik numarası,telefon no gibi kayıtlar 
 saklanacaktır.
+
 -Kesilen biletlerde yapılacak seyahate ilişkin uçuş ve uçak id’leri bellidir.Biletin rezerve 
 edildiği tarih ve hangi seyahat acentesinden rezerve edildiği kayıt altın alınmalıdır.
+
 -Firmanın filosunda bulunan her uçak bir kod numarası ile kayıtlıdır. Ayrıca bu uçağa ait 
 marka, model, yolcu kapasitesi ve menzil bilgileri de saklanmaktadır. Bütün uçaklar aktif 
 olarak kullanılmamakta, bazılar bakım/onarım altında olabilmektedir.
+
 -Her uçuşun bir numarası vardır. Bu uçuşa ait kalkış ve varış noktaları ve kalkış kapısı,varış 
 kapısı bellidir. Ayrıca bu uçuşun tarihi ve saati ile hangi uçak tarafından gerçekleştirileceği 
 bellidir.
+
 -Her uçuşta yolcuların istekler,can sağlığı ve güvenliğinden sorumlu bir mürettebat ekibi 
 sorumludur.Bu ekip çalışanlarının ekip kodlarıyla beraber isim, soyisim ve işe başlangıç 
 tarihleri gibi birçok kişisel bilgileri de veri tabanında tutulacaktır.
-- Bir yolcu birden fazla bilet satın alabilir.Bir bileti yalnızca bir yolcu satın 
+
+-Bir yolcu birden fazla bilet satın alabilir.Bir bileti yalnızca bir yolcu satın 
 alabilir.(Passenger-Reservation(1-N) )
+
 -Bir yolcu farklı zamanlarda farklı birçok uçuşa sahip olabilir.Bir uçuşta birden fazla yolcu 
 seyahat edebilir.(Passenger-Flight(M-N) )
+
 -Bir yolcu aynı zaman içerisinde yalnızca bir uçağa binebilir.Bir uçağa birden çok yolcu 
 binebilir.(Passenger-Plane(1-N) )
+
 -Bir yolcudan mürettebat ekibindeki birden çok kişi sorumludur.Mürettebat birden çok 
 kişiden sorumludur.(Passenger-Crew(M-N) )
+
 -Bir bilet tek uçuşa sahip olacaktır.Bir uçuş için bir bilet geçerlidir.(Reservation-Flight(1-1) )
+
 -Bir uçak birden fazla uçuş yapabilir. Bir uçak bazı uçuşlarda kullanılmayabilir. Bir uçuşa ait 
 mutlaka bir uçak vardır.(Plane-Flight(1-N) )
+
 -Bir uçağı belirli bir mürettebat ekibi hazırlar.Bir ekip birden fazla uçağı 
 hazırlayabilir.(Plane-Crew(N-1) )
+
 -Bir havalimanında birden fazla çalışan olabilir.Bir çalışan yalnızca bir havalimanında 
 çalışmalıdır.(Airport-Worker(1-N))
 
